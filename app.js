@@ -8,7 +8,7 @@ const name = "priyanka";
 
 // Simple route
 app.get("/", (req, res) => {
-  const message = "welcome to shopeasy from ${name}";
+  const message = "welcome to shopeasy from priyanka";
   res.send(message);
 });
 
