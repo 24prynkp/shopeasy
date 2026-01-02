@@ -9,4 +9,5 @@ describe('GET /', () => {
   });
   afterAll(() => {
     server.close();
+  });
 });
