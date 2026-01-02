@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('./app');
+const {app,server,name} = require('./app');
 
 describe('GET /', () => {
   it('should return 200 status and the correct message', async () => {
@@ -7,4 +7,6 @@ describe('GET /', () => {
     expect(res.statusCode).toBe(200);
     expect(res.text).toBe('welcome to shopeasy from priyanka');
   });
+  afterAll(() => {
+    server.close();
 });
